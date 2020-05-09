@@ -1,0 +1,20 @@
+{
+  "name": "ApolloServer",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "https://github.com/Olisun/ApolloServer.git",
+  "author": "Oliver Sun <olisun@mac.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon server.js",
+    "server": "nodemon server.js",
+    "client": "yarn start --prefix client",
+    "dev": "concurrently \"yarn server\" \"yarn client\""
+  },
+  "dependencies": {
+    "apollo-server": "^2.13.0",
+    "axios": "^0.19.2",
+    "graphql": "^15.0.0",
+    "nodemon": "^2.0.3"
+  }
+}
