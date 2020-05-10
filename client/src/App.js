@@ -19,7 +19,7 @@ const GET_LAUNCHES = gql`
 
 //User component
 const Launch = ({ launch: { flight_number, mission_name, launch_year } }) => (
-  <div className='mb-3 px-0'>``
+  <div className='mb-3 px-0'>
     <Card style={{ width: '54rem', margin: 'auto' }}>
       <Card.Body>
         <Card.Title>{mission_name}</Card.Title>
@@ -40,7 +40,7 @@ function App() {
 
   return (
     <main
-      className="App" className='container'>
+      className="App" >
       <h1>Launches</h1>
       {data.launches.map(launch => (
         <Launch key={launch.flight_number} launch={launch} />

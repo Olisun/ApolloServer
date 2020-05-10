@@ -9,7 +9,7 @@ import App from './App';
 
 
 const client = new ApolloClient({
-  uri: 'https://7sgx4.sse.codesandbox.io'
+  uri: 'http://localhost:4000/'
 });
 
 ReactDOM.render(
